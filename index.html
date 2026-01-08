@@ -1,62 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- tailwind css link -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- custom css link -->
-     <link rel="stylesheet" href="style/style.css" class="css">
-     
+    <link rel="stylesheet" href="style/style.css" class="css" />
+
     <!-- title -->
     <title>K_Vault</title>
-
-</head>
-<body class="bg-gray-300">
+  </head>
+  <body class="bg-gray-300">
     <!-- header start here -->
-    <header class="flex justify-between items-center p-4 bg-white shadow-md border-b-2 border-blue-300">
-        <div class="left-navbar">
-            <img src="./assets/logo-navbar.png" alt="">
-        </div>
-        <div class="middle-navbar">
-            <nav>
-                <ul class="flex gap-5">
-                   
-                    <li class="hover:underline underline-offset-4"><a href="">Features</a></li>
-                    <li class="hover:underline underline-offset-4"><a href="">How It Works</a></li>
-                    <li class="hover:underline underline-offset-4"><a href="">Why It's Different</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="right-navbar">
-            <button class="bg-[#469165] text-white px-3 py-2 rounded-sm">Get Early Access</button>
-        </div>
+    <header
+      class="flex justify-between items-center p-4 bg-white shadow-md border-b-2 border-blue-300"
+    >
+      <div class="left-navbar">
+        <img src="./assets/logo-navbar.png" alt="" />
+      </div>
+      <div class="middle-navbar">
+        <nav>
+          <ul class="flex gap-5">
+            <li class="hover:underline underline-offset-4">
+              <a href="">Features</a>
+            </li>
+            <li class="hover:underline underline-offset-4">
+              <a href="">How It Works</a>
+            </li>
+            <li class="hover:underline underline-offset-4">
+              <a href="">Why It's Different</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-navbar">
+        <button class="bg-[#469165] text-white px-3 py-2 rounded-sm">
+          Get Early Access
+        </button>
+      </div>
     </header>
     <!-- main content  -->
-    <main>
-        <!-- banner section  -->
-         <section class="banner min-h-[400px] p-20">
-            <div class="text-center">
-                <div class="p">
-                    <p class="bg-white text-center w-50 mx-auto rounded-2xl">Early Access Now Open</p>
-                </div>
-                <div>
-                    <h2 class="text-white text-5xl font-bold py-3">Structured thinking,<br><span class="text-[#30B868]">
-                        not just note-taking.
-                    </span></h2>
-                </div>
-                <div>
-                    <p class="text-white pb-3">A private space to store notes, links, and learning summaries — designed to <br>
-help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
-                </div>
-                <div class="flex flex-col md:flex-row lg:flex-row gap-5 justify-center items-center py-6">
-                    <button class="bg-[#469165] text-white px-3 py-2 rounded-sm border-2 border-[#469165]">Start Building Your Vault</button>
-                    <button class="border-2 border-white px-3 py-2 rounded-sm text-white">See How It Works</button>
-                </div>
+    <main >
+      <!-- banner section  -->
+      <section class="banner min-h-[400px] p-20">
+        <div class="text-center">
+          <div class="p">
+            <p class="bg-white text-center w-50 mx-auto rounded-2xl">
+              Early Access Now Open
+            </p>
+          </div>
+          <div>
+            <h2 class="text-white text-5xl font-bold py-3">
+              Structured thinking,<br /><span class="text-[#30B868]">
+                not just note-taking.
+              </span>
+            </h2>
+          </div>
+          <div>
+            <p class="text-white pb-3">
+              A private space to store notes, links, and learning summaries —
+              designed to <br />
+              help you think clearly, connect ideas, and turn learning into
+              long-term knowledge.
+            </p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row lg:flex-row gap-5 justify-center items-center py-6"
+          >
+            <button
+              class="bg-[#469165] text-white px-3 py-2 rounded-sm border-2 border-[#469165]"
+            >
+              Start Building Your Vault
+            </button>
+            <button
+              class="border-2 border-white px-3 py-2 rounded-sm text-white"
+            >
+              See How It Works
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- card section -->
+      <section class="max-w-7xl mx-auto">
+        <div class="title text-center py-10">
+          <h2 class="text-3xl font-bold">Notes don't fail, Structure does.</h2>
+          <p class="text-gray-700">
+            You're not bad at learning. Your tools just weren't built for how
+            knowledge actually works.
+          </p>
+        </div>
+        <div
+          class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-5 items-center justify-center gap-5 py-10"
+        >
+          <!-- card 1 -->
+          <div
+            class="card bg-white p-5 text-center rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300"
+          >
+            <div
+              class="flex justify-center items-center bg-blue-500 w-16 h-16 mx-auto rounded-full mb-4"
+            >
+              <img src="./assets/Vector.png" alt="" />
             </div>
-         </section>
+            <h4 class="font-bold text-lg">Scattered notes</h4>
+            <p>Your ideas live in 10 different apps, none of them connected.</p>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="card bg-white p-5 text-center rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300"
+          >
+            <div
+              class="flex justify-center items-center bg-blue-500 w-16 h-16 mx-auto rounded-full mb-4"
+            >
+              <img src="./assets/Bookmarks.png" alt="" />
+            </div>
+            <h4 class="font-bold text-lg">Scattered notes</h4>
+            <p>Your ideas live in 10 different apps, none of them connected.</p>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="card bg-white p-5 text-center rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300"
+          >
+            <div
+              class="flex justify-center items-center bg-blue-500 w-16 h-16 mx-auto rounded-full mb-4"
+            >
+              <img src="./assets/Brain.png" alt="" />
+            </div>
+            <h4 class="font-bold text-lg">Scattered notes</h4>
+            <p>Your ideas live in 10 different apps, none of them connected.</p>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="card bg-white p-5 text-center rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300"
+          >
+            <div
+              class="flex justify-center items-center bg-blue-500 w-16 h-16 mx-auto rounded-full mb-4"
+            >
+              <img src="./assets/Info.png" alt="" />
+            </div>
+            <h4 class="font-bold text-lg">Scattered notes</h4>
+            <p>Your ideas live in 10 different apps, none of them connected.</p>
+          </div>
+        </div>
+      </section>
+      <!-- brain section -->
+      <section class="flex justify-center items-center gap-10 my-10 px-5 max-w-7xl mx-auto">
+        <div class="">
+          <img class="h-[500px]" src="./assets/knowledge.png" alt="" />
+        </div>
+        <div class="w-1/2 p-5">
+          <p class="text-[#469165]">The Solution</p>
+          <h2 class="text-4xl font-bold py-3">
+            Your second brain,<br />
+            structured by design.
+          </h2>
+          <p class="text-gray-700 pb-5">
+            Personal Knowledge Vault isn't another note-taking app. zIt's a <br>
+            thinking environment where every note, link, and summarybecomes part <br>
+            of an interconnected web of understanding.
+          </p>
+          <div class="flex items-center gap-3 pb-3">
+            <img src="./assets/CheckCircle.png" alt="" />
+            <span>Capture ideas with structure built-in from day one</span>
+          </div>
+          <div class="flex items-center gap-3 pb-3">
+            <img src="./assets/CheckCircle.png" alt="" />
+            <span>Connect related concepts automatically as you write</span>
+          </div>
+          <div class="flex items-center gap-3 pb-3">
+            <img src="./assets/CheckCircle.png" alt="" />
+            <span>Build lasting knowledge through reflection prompts</span>
+          </div>
+          <div class="flex items-center gap-3 pb-3">
+            <img src="./assets/CheckCircle.png" alt="" />
+            <span>Find anything instantly with semantic search</span>
+          </div>
+        </div>
+      </section>
+      <!-- think more section -->
+       <section>
+        <div class="max-w-7xl mx-auto text-center p-10 bg-[#F7F6F2] rounded-lg mb-10">
+          <h2 class="text-4xl font-bold pb-3">Ready to think more clearly?</h2>
+          <p class="text-gray-700 pb-5">
+      Join thousands of learners who are building their personal knowledge vaults. <br>Start free, no credit card required.
+          </p>
+          <button
+            class="bg-[#469165] text-white px-3 py-2 rounded-sm border-2 border-[#469165]"
+          >
+            Get Early Access
+          </button>
+          <p class="pt-3">Free during early access • No credit card needed</p>
+        </div>
+       </section>
     </main>
     <!-- footer start here -->
-    <footer></footer>
-</body>
+    <footer class="bg-[#001931] p-5 text-center">
+        <div>
+            <div></div>
+            <div></div>
+            
+        </div>
+
+        <div >
+            <p class="text-white">&copy; 2024 K_Vault. All rights reserved.</p>
+        </div>
+    </footer>
+  </body>
 </html>
